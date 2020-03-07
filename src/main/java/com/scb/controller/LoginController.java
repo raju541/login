@@ -22,11 +22,11 @@ public class LoginController {
 			  System.out.println("username: "+uname +" & password: "+pwd);
 			boolean  status=loginservice.loginaction(uname,pwd);
 			if(status==true) {
-				System.out.println("Login success");
+				System.out.println("Login successful");
 				return "registration";
 			}
 			else {
-				System.out.println("Login failure");
+				System.out.println("Login failure Please try Again");
 				return "loginfailure";
 			}
 		}
